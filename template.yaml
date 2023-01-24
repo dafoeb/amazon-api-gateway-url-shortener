@@ -203,7 +203,9 @@ Resources:
             preBuild:
               commands:
                 - cd client
+                - pwd
                 - npm install
+                - ls -al
                 - npm ci
             build:
               commands:
